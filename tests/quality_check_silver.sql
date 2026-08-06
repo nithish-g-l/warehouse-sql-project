@@ -1,4 +1,26 @@
+/*
+====================================================================
+Data Quality Validation Checks
+====================================================================
 
+Purpose:
+    This script performs a series of data quality validation checks on
+    the Silver layer to ensure data accuracy, consistency, and
+    integrity before it is used for reporting and analytics.
+
+Validation Checks:
+    - Detects null or duplicate primary keys.
+    - Identifies leading and trailing whitespace in text fields.
+    - Verifies data standardization and consistency.
+    - Validates date values and chronological order.
+    - Checks consistency across related columns and business rules.
+
+Usage:
+    - Execute after loading data into the Silver layer.
+    - Review and resolve any data quality issues identified by the checks.
+
+====================================================================
+*/
 
 -- silver.crm_cust_info checks
 --Check For Nulls and Duplicates in Primary Key
